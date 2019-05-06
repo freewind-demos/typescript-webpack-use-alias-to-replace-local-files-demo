@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "demo-web": "webpack --config webpack.config-web.ts && open dist/index.html",
-    "demo-node": "webpack --config webpack.config-node.ts && node dist/node.bundle.js"
+    "demo": "webpack && node dist/bundle.js"
   },
   "devDependencies": {
     "@types/html-webpack-plugin": "3.2.0",

@@ -2,12 +2,17 @@ import {Configuration} from 'webpack';
 import path from 'path';
 
 const config: Configuration = {
-  target: 'node',
   mode: "development",
-  entry: './hello.ts',
+  entry: './src/entry.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'node.bundle.js'
+    filename: 'bundle.js'
+  },
+  resolve: {
+    alias: {
+      '#hello': path.resolve('./src/hello/real/index.ts')
+    },
+    extensions: ['.ts']
   },
   module: {
     rules: [{
@@ -17,4 +22,4 @@ const config: Configuration = {
   }
 }
 
-export default [config];
+export default config;

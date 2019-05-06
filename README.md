@@ -1,8 +1,8 @@
-TypeScript Node "request" Bundle In Node and Browser with "alias" Demo
+TypeScript Webpack Use Alias to Replace Local Files Demo
 ======================================================================
 
-`request`是一个node下的http request库，为了让它在浏览器下也能正常运行，在打包为浏览器下的代码时，
-使用webpack的alias，将`request`替换为`browser-request`。
+可以利用tsconfig.json中的`paths`，来为本地某个文件定义一个module name，
+然后在webpack中利用alias，（在不同的条件下）将它替换为不同的实现。
 
 ## Node
 

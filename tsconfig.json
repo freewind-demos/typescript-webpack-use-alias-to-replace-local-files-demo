@@ -4,9 +4,15 @@
     "target": "es6",
     "module": "commonjs",
     "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "#hello": [
+        "./src/hello/index.ts"
+      ]
+    }
   },
   "files": [
-    "hello.ts"
+    "./src/entry.ts"
   ]
 }
