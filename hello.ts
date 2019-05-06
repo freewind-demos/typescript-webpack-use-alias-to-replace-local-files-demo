@@ -1,10 +1,5 @@
-import request from 'request-promise-native';
+import request from 'request';
 
-async function run() {
-  const response = await request("https://postman-echo.com/get?hello=request");
-  console.log(typeof response)
-  console.log(response)
-}
-
-run();
-
+request("https://postman-echo.com/get?hello=request", (error, response, body) => {
+  console.log(body);
+});
