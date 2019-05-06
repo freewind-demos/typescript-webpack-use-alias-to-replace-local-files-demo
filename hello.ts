@@ -1,5 +1,10 @@
-import request, {Response} from 'request';
+import request from 'request-promise-native';
 
-request("https://github.com/", (error: any, response: Response, body: any) => {
-  console.log(body);
-})
+async function run() {
+  const response = await request("https://postman-echo.com/get?hello=request");
+  console.log(typeof response)
+  console.log(response)
+}
+
+run();
+

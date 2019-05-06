@@ -1,7 +1,7 @@
-TypeScript Node "request" Demo
-===========================
+TypeScript Node "request-promise-native" Demo
+=============================================
 
-使用"request"这个库来发送http请求。
+让"request"支持async/await
 
 ```
 npm install
