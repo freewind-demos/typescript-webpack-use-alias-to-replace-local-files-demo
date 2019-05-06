@@ -10,7 +10,7 @@ const config: Configuration = {
   },
   resolve: {
     alias: {
-      '#hello': path.resolve('./src/hello/real/index.ts')
+      '#hello': path.resolve('./src/hello/impl/index.ts')
     },
     extensions: ['.ts']
   },

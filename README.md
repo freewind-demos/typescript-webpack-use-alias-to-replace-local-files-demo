@@ -1,8 +1,10 @@
 TypeScript Webpack Use Alias to Replace Local Files Demo
 ======================================================================
 
-可以利用tsconfig.json中的`paths`，来为本地某个文件定义一个module name，
-然后在webpack中利用alias，（在不同的条件下）将它替换为不同的实现。
+可以利用typescript来声明一个占位module，然后在webpack中利用alias，（在不同的条件下）将它替换为不同的实现。
+
+注意：之前使用的是tsconfig.json中的`paths`来为本地某个文件定义一个module name，后来发现这个方式不太灵活
+（比如跨项目使用可能有问题），所以改用`declare module`的方式。
 
 ## Node
 
