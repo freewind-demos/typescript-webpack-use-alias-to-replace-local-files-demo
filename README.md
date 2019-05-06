@@ -1,18 +1,9 @@
-TypeScript Hello World Demo
+TypeScript Node "request" Demo
 ===========================
+
+使用"request"这个库来发送http请求。
 
 ```
 npm install
 npm run demo
 ```
-
-Note:
-
-`esModuleInterop` is recommended to set to `true`,
-since we can have consistent importing syntax with babel,
-always use:
-
-```
-import some from 'some'
-```
-

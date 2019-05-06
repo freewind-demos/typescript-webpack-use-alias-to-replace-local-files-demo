@@ -3,7 +3,11 @@
     "demo": "ts-node hello.ts"
   },
   "devDependencies": {
+    "@types/request": "2.48.1",
     "ts-node": "7.0.1",
     "typescript": "3.2.2"
+  },
+  "dependencies": {
+    "request": "2.88.0"
   }
 }
